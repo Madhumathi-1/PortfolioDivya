@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .gradient {
+            background-color: rgb(252, 237, 224);
+        }
+
+        @font-face {
+            font-family: puvi-bold;
+            src: url(Zoho\ Puvi\ Bold.ttf)
+        }
+
+        @font-face {
+            font-family: puvi-reg;
+            src: url(Zoho\ Puvi\ Regular.ttf);
+        }
+
+        * {
+            font-family: puvi-reg;
+            scroll-behavior: smooth;
+        }
+
+        .relative svg {
+            margin-top: 55px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+
+        .background {
+            background-color: gray;
+            opacity: 0.7;
+            background-size: cover;
+        }
+
+        .firstsection {
+            height: 100vh;
+        }
+
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            max-width: 50%;
+            margin: auto;
+            height: 80%;
+        }
+
+        .text-big {
+            font-family: "Piazzolla", serif;
+            font-weight: bold;
+            font-size: 41px;
+            text-align: center;
+        }
+
+        .text-small {
+            font-family: "Sansita Swashed", cursive;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: "Ubuntu", sans-serif;
+            display: flex;
+            justify-content: center;
+            color: black;
+            font-weight: 700;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body class="leading-normal tracking-normal text-white gradient">
+    <!-- nav start -->
+    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+            <div class="pl-4 flex items-center">
+                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                    href="#" style="color: black">My Portfolio</a>
+            </div>
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle"
+                    class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0zM0 7h20v2H0zM0 11h20v2H0zM0 15h20v2H0z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+                id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3"><a class="inline-block py-2 px-4 text-black font-bold no-underline"
+                            href="#about">About</a></li>
+                    <li class="mr-3"><a
+                            class="inline-block text-black no-underline hover:text-gray-800 font-bold hover:text-underline py-2 px-4"
+                            href="#projects">Projects</a></li>
+                    <li class="mr-3"><a
+                            class="inline-block text-black font-bold no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                            href="#skills">Skills</a></li>
+                    <li class="mr-3"><a
+                            class="inline-block text-black font-bold no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                            href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="border-b border-gray-300 opacity-25 my-0 py-0" />
+    </nav>
+    <!-- nav end  -->
+
+    <!-- profile start -->
+    <div class="pt-24">
+        <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+                <h1 class="my-4 text-5xl font-bold leading-tight" style="color: black; font-family: puvi-bold;">I'm
+                    DivyaPriya</h1>
+                <h3 style="color: black; font-size: 34px;font-family: 'puvi-reg';">Content Writer
+                </h3>
+                <i class="fa-regular fa-envelope" style="color: black;     margin-top: 3%;
+                margin-left: 1%;"><a style="color: #F95A23;"
+                        href="https://cliq.zoho.com/company/64396901/chats/2243231637746780153/messages/1717566074839_261572153437">&nbsp&nbspdivyapriya.b@zohocorp.com</a></i>
+                <p class="leading-normal text-2xl mb-8"
+                    style="text-align: justify; color: black;margin-top: 6%;     margin-left: 1%;">I'm
+                    a
+                    dedicated and passionate content writer with a strong commitment to creating engaging and impactful
+                    content.Explore my projects, skills, and get in touch!</p>
+
+            </div>
+
+            <div class="w-full md:w-3/5 py-6 text-center">
+                <img class="w-full z-50" src="Diary-bro (1).png" alt="Your Photo">
+            </div>
+        </div>
+    </div>
+    <!-- profile end -->
+
+    <!-- about start -->
+    <section class="bg-white border-b py-8" id="about">
+        <div class="container max-w-5xl mx-auto m-8">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">About Me</h2>
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 p-6">
+                    <img src="viewPhoto.png" alt="" class="w-full rounded-lg">
+                </div>
+                <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+                    <i class="fa-regular fa-envelope mb-4 text-xl" style="color: black;">
+                        <a style="color: #F95A23;"
+                            href="mailto:divyapriya.b@zohocorp.com">&nbsp;&nbsp;divyapriya.b@zohocorp.com</a>
+                    </i><br>
+                    <p class="text-gray-800 leading-normal text-lg mt-4 md:mt-0" style="    font-size: 20px;
+                    ">Identifying myself as the first
+                        generation to configure in the IT sector, I'm interested in selling brands and not selling
+                        myself. I'm a creative writer and presentation enthusiast with a passion for storytelling. I am
+                        committed to driving the success of IT businesses through innovative marketing strategies,
+                        effectively communicating the unique selling propositions, and ultimately contributing to the
+                        growth and market leadership of the organization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+
+    <!-- projects start -->
+    <section class="bg-gray-100 py-8" id="projects">
+        <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Projects</h2>
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                        <a href="writing.html" class="flex flex-wrap no-underline hover:no-underline">
+                            <img src="https://img.freepik.com/premium-vector/young-male-character-is-working-as-freelance-designer-cheerful-redhead-man-is-working-computer_118813-24984.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1711929600&semt=ais"
+                                class="h-64 w-full rounded-t pb-6">
+                            <div class="w-full font-bold text-xl text-gray-800 px-6" style="text-align: center;">WRITINGS</div>
+                            <p class="text-gray-800 text-base px-6 mb-5"><a
+                                    href="https://workdrive.zoho.com/folder/bt373aa11ff3452054dc3a8df9315b7908b94">Zoho
+                                    Products & Creative Writings</a></p>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                        <a href="marketing.html" class="flex flex-wrap no-underline hover:no-underline">
+                            <img src="https://cdni.iconscout.com/illustration/premium/thumb/business-presentation-2511570-2122878.png"
+                                class="h-64 w-full rounded-t pb-6">
+                            <div class="w-full font-bold text-xl text-gray-800 px-6">MARKETING TASKS AND WRITINGS</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                        <a href="presentation.html" class="flex flex-wrap no-underline hover:no-underline">
+                            <img src="https://cdni.iconscout.com/illustration/premium/thumb/business-presentation-on-chart-for-executives-2741005-2277548.png"
+                                class="h-64 w-full rounded-t pb-6">
+                            <div class="w-full font-bold text-xl text-gray-800 px-6" style="text-align: center;">PRESENTATION</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-6 flex flex-col flex-grow flex-shrink">
+                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                        <a href="training.html" class="flex flex-wrap no-underline hover:no-underline">
+                            <img src="https://cdni.iconscout.com/illustration/premium/thumb/woman-presenting-analysis-report-5892363-4891429.png?f=webp"
+                                class="h-64 w-full rounded-t pb-6">
+                            <div class="w-full font-bold text-xl text-gray-800 px-6" style="text-align: center;">CONCIERGE TRAINING</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects end -->
+
+    <section class="bg-white border-b py-8" id="skills">
+        <div class="container max-w-5xl mx-auto m-8">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Skills</h2>
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full p-6 flex flex-wrap justify-center">
+                    <div class="w-full md:w-1/3 p-6">
+                        <div class="text-center">
+                            <img src="support_14287778.png" alt="Communication" class="w-24 h-24 md:w-32 md:h-32">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Communication</h3>
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/3 p-6">
+                        <div class="text-center">
+                            <img src="presentation_1436716.png" alt="Presentation" class="w-24 h-24 md:w-32 md:h-32">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Presentation</h3>
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/3 p-6">
+                        <div class="text-center">
+                            <img src="creative_7603720.png" alt="Creative Writing" class="w-24 h-24 md:w-32 md:h-32">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Creative Writing</h3>
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/3 p-6">
+                        <div class="text-center">
+                            <img src="typewriter_6507261.png" alt="Impromptu Writing" class="w-24 h-24 md:w-32 md:h-32">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Impromptu Writing</h3>
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/3 p-6">
+                        <div class="text-center">
+                            <img src="live_3526866.png" alt="Product R&D" class="w-24 h-24 md:w-32 md:h-32">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Product R&D</h3>
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/3 p-6">
+                        <div class="text-center">
+                            <img src="communication_16503584.png" alt="Active Listening" class="w-24 h-24 md:w-32 md:h-32">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Active Listening</h3>
+                          
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact start -->
+    <section class="bg-gray-100 py-8" id="contact" style="background-color: ;">
+        <div class="container max-w-5xl mx-auto m-8">
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Contact Me</h2>
+            <div class="w-full mb-4">
+                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+                    <p class="text-gray-800 leading-normal text-lg mt-4 md:mt-0">Feel free to get in touch with me. I'm
+                        always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        visions.</p>
+                </div>
+                <div class="w-full md:w-1/2 p-6">
+                    <form action="https://formspree.io/f/xayvzvbd" method="POST" class="w-full">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                            <input type="email" id="email" name="_replyto" required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                            <textarea id="message" name="message" required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button type="submit"
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                style="background-color: black;">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact end -->
+
+    <footer class="bg-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-800">©2024 by My Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
